@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&family=Lora:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* HOMEPAGE */
+/* NAVBAR */
+
+.homepage{
+    background-color:#189ab450 ;
+}
+li,a{
+    /* font-weight:600; */
+    font-size:16px;
+    font-family: 'Libre Franklin', sans-serif;
+    text-decoration:none;
+    color: black;
+}
+header{
+    padding: 10px;
+    margin-bottom:10px;
+    background-color:white;
+    display:flex;
+    justify-content:flex-end;
+}
+.nav_links{
+    list-style:none;
+    padding-right:100px;
+}
+.nav_links li{
+    display:inline-block;
+    padding:0 30px;
+}
+
+/* TITLE OR INTRODUCTION */
+.my_info{
+   width: 50%;
+   padding:10px;
+   margin-top: 15%;
+   margin-left:auto;
+   margin-right:auto;
+}
+.intro{
+    font-family: 'Lora', serif;
+    font-size:25px;
+}
+.homepage h1{
+    font-family: 'Lora', serif;
+    font-size:90px;
+    color:white;
+    letter-spacing: 5px;
+    text-shadow: 5px 5px 10px grey;
+}
+.description{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size:20px;
+    font-weight:300;
+    letter-spacing: 3px;
+    text-align:center;
+    /* padding-bottom: 31.99%; */
+}
+.des{
+    color:#CF7019;
+}
+
+/* About */
+.about_me{
+    padding:30px;
+}
+.about_me h3{
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight:900;
+    /* text-align:center; */
+    letter-spacing: 3px;
+    font-size:40px;
+    padding:10px;
+    padding-top:40px;
+    text-transform:uppercase;
+    
+}
+.am_info{
+    display:flex;
+    justify-content:center;
+}
+.about_me img{
+    width: 30%;
+    border-radius: 50px;
+    padding:30px;
+}
+.about_me p{
+    font-family: 'Rubik', sans-serif;
+    width: 40%;
+    height:fit-content;
+    padding:20px;
+    margin-top:10px;
+}
+/* PROJECTS */
+.port{
+    background-color:#395A7F;
+}
+.port h3{
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight:900;
+    text-align:center;
+    letter-spacing: 3px;
+    font-size:40px;
+    padding:10px;
+    color:white;
+    height:200px;
+}
