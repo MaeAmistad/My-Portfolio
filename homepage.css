@@ -135,7 +135,7 @@ button{
     width: 300px;
     height:290px;
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.329), 0 6px 20px 0 rgba(112, 112, 112, 0.308);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.329), 0 6px 20px 0 rgba(112, 112, 112, 0.308); */
 }
 .proj_list{
    display:flex; 
@@ -146,12 +146,27 @@ button{
 
 /* Contact */
 .cntct{
-    height:200px;
-    background-color:#ACACAC;
-    padding:10px;
+    height:100%;
+    padding:10px 10px 150px 10px;
 }
-.cntct p{
-    margin:40px 0 20px 30px;
+.cntct h3{
     font-family: 'Libre Franklin', sans-serif;
-    letter-spacing:3px;
+    font-weight:800;
+    text-align:center;
+    letter-spacing: 3px;
+    font-size:40px;
+    padding:10px;
+    color:black;
+    margin: 30px 0 40px 0; 
+}
+.cntct_img{
+    width:20.5%;
+    margin:auto;
+}
+.cntct_img img{
+    width:auto;
+    height:20px;
+}
+.cntct_img p{
+    padding:10px;
 }
