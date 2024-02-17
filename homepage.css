@@ -7,7 +7,9 @@
     padding:0;
     box-sizing:border-box;
 }
-
+html{
+    scroll-behavior:smooth;
+}
 
 /* HOMEPAGE */
 /* NAVBAR */
@@ -15,28 +17,43 @@
 .homepage{
     background-color:#189ab450 ;
 }
-li,a{
-    font-size:16px;
-    font-family: 'Libre Franklin', sans-serif;
-    text-decoration:none;
-    color: black;
-}
-nav{
-    overflow:hidden;
+header{
     position:fixed;
+    display:flex;
+    justify-content:space-between;
+    align-content:center;
     width:100%;
-    padding:15px;
-    background-color:white;
+    padding:10px 50px;
+    height: 70px;
+    background-color:rgba(255, 255, 255, 0.514);
 }
-.nav_links{
+header p{
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing:5px;
+    padding:10px;
+}
+header ul{
+    display:flex;
+    justify-content:space-between;
+}
+header ul li{
     list-style:none;
-    padding-right:100px;
+    padding:20px;
 }
-.nav_links li{
-    display:inline-block;
-    padding:0 30px;
+header ul li a{
+    text-decoration:none;
+    color:black;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size:14px;
+    text-transform:uppercase;
+    padding: 0 7px;
 }
-
+header ul li a:hover{
+    border-bottom: 1px solid rgb(72, 203, 236);
+    transition: 0.6s;
+}
 /* TITLE OR INTRODUCTION */
 .my_info{
    width: 50%;
@@ -149,6 +166,11 @@ button{
     height:100%;
     padding:10px 10px 150px 10px;
 }
+.cntct_acc{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 .cntct h3{
     font-family: 'Libre Franklin', sans-serif;
     font-weight:800;
@@ -159,14 +181,15 @@ button{
     color:black;
     margin: 30px 0 40px 0; 
 }
-.cntct_img{
-    width:20.5%;
-    margin:auto;
-}
 .cntct_img img{
     width:auto;
-    height:20px;
+    height:25px;
+    display:flex;
+    flex-direction:row;
+    margin: 15px;
 }
-.cntct_img p{
-    padding:10px;
+.acc p{
+    padding:10.5px;
+    font-family: 'Libre Franklin', sans-serif;
+    cursor:pointer;
 }
