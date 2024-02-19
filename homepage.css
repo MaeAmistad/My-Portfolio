@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;700&family=Lora:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;700&family=Lora:ital,wght@0,500;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
 *
@@ -13,19 +13,21 @@ html{
 
 /* HOMEPAGE */
 /* NAVBAR */
-
 .homepage{
     background-color:#189ab450 ;
+}
+.navbar{
+    display:flex;
+    justify-content:center;
 }
 header{
     position:fixed;
     display:flex;
     justify-content:space-between;
     align-content:center;
-    width:100%;
-    padding:10px 50px;
+    /* width:100%; */
+    padding:10px;
     height: 70px;
-    background-color:rgba(255, 255, 255, 0.514);
 }
 header p{
     font-family: 'Lora', serif;
@@ -37,23 +39,53 @@ header p{
 header ul{
     display:flex;
     justify-content:space-between;
+    margin-left:300px;
 }
 header ul li{
     list-style:none;
     padding:20px;
 }
 header ul li a{
+    position:relative;
     text-decoration:none;
     color:black;
     font-family: 'Libre Franklin', sans-serif;
     font-size:14px;
     text-transform:uppercase;
     padding: 0 7px;
+    font-weight:400;
 }
-header ul li a:hover{
-    border-bottom: 1px solid rgb(72, 203, 236);
-    transition: 0.6s;
+header ul li a:after{
+    background-color:rgb(255, 255, 255);
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    height:2px;
+    width:0;
+    transition:0.4s;
 }
+header ul li a:hover:after{
+    width:100%;
+}
+header ul li .fa-house{
+    cursor:pointer;
+    color:#201f72e7;
+}
+header .house_icon{
+    margin-top:-2px;
+}
+header ul li i:hover{
+    color:#201f72;
+}
+header.sticky{
+    background-color:#189ab4c5 ; 
+    border-radius:0 0 30px 30px;    
+}
+header.sticky p, header.sticky ul li a, header.sticky ul li i{
+    color:white;
+}
+/*     border:1px solid black; */
 /* TITLE OR INTRODUCTION */
 .my_info{
    width: 50%;
@@ -73,6 +105,8 @@ header ul li a:hover{
     letter-spacing: 5px;
     text-shadow: 5px 5px 10px grey;
     width: 110%;
+
+    
 }
 .description{
     font-family: 'Libre Franklin', sans-serif;

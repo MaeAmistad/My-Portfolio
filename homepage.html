@@ -9,25 +9,26 @@
         <script src="https://kit.fontawesome.com/9aa6942f31.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="main">
             <section id="home">
                 <div class="homepage">
+                    <div class="navbar">
                     <header>
-                        <p>CMA</p>
+                        <p>C.M.A.</p>
                         <nav>
                             <ul class="nav_links">
-                                <li><a href="#home">Home</a></li>
+                                <li class="house_icon"><a href="#home"><i class="fa-solid fa-house fa-lg"></i></a></i></li>
                                 <li><a href="#about">About</a></li>
                                 <li><a href="#portfolio">Projects</a></li>
                                 <li><a href="#contact">Contact</a></li>
                             </ul>
                         </nav>
                     </header>
+                </div>
                     <div class="my_info">
                         <p class="intro">Hi, <i>Im</i></p>
                         <h1>Christine Mae</h1>
                         <p class="description">Aspiring <span class="des">Web Developer</span> who loves to <span class="des">build</span> website.</p>
-                        <div class="button"><button>View Resume</button></div>
+                        <div class="button"><button id="button">View Resume</button></div>
                     </div>
                     
                 </div>
@@ -90,14 +91,19 @@
                             <p>Mae Amistad</p>
                         </div> 
                     </div>
-                    
-                            
-  
                 </div>
             </section>
 
-        </div>
-        
-        
+        <script type="text/javascript">
+            // NAV ANIMATION
+            window.addEventListener("scroll", ()=>{
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+            // VIEW RESUME BUTTON
+            button.addEventListener("click", ()=> {
+                window.open("/other/Christine-Mae-Amistad-Resume.pdf", "_blank");
+            })
+        </script>
     </body>
 </html>
