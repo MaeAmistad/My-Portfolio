@@ -1,229 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;700&family=Lora:ital,wght@0,500;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
-
-*
-{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face{
+    font-family:'Lovelo';
+    src: url('WEB/Lovelo-LineLight.woff'),    
+}
+@font-face{
+    font-family:'Lovelo Black';
+    src:url('./WEB/Lovelo-Black.woff');
+}
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    overflow:hidden;
 }
 html{
     scroll-behavior:smooth;
 }
-
-/* HOMEPAGE */
-/* NAVBAR */
-.homepage{
-    background-color:#189ab450 ;
+body{
+    height:100vh;
+    background-image:linear-gradient(to bottom left, #FACBB9,#F2A9C6,#CFB4DB,#A8C6EA);
 }
-.navbar{
-    display:flex;
-    justify-content:center;
-}
-header{
-    position:fixed;
-    display:flex;
-    justify-content:space-between;
-    align-content:center;
-    /* width:100%; */
-    padding:10px;
-    height: 70px;
-}
-header p{
-    font-family: 'Lora', serif;
-    font-size: 25px;
-    font-weight: 600;
-    letter-spacing:5px;
-    padding:10px;
-}
-header ul{
-    display:flex;
-    justify-content:space-between;
-    margin-left:300px;
-}
-header ul li{
-    list-style:none;
-    padding:20px;
-}
-header ul li a{
+.nav{
     position:relative;
+    top: 160px;
+    left:65%;
+}
+.nav .div1,.nav .div2,.nav .div3{
+    background-color:white;
+    margin:20px;
+    padding:20px 15px;
+    width:23%;
+    border-radius: 10px;
+    text-align:center;
+}
+.nav a{
     text-decoration:none;
-    color:black;
-    font-family: 'Libre Franklin', sans-serif;
-    font-size:14px;
-    text-transform:uppercase;
-    padding: 0 7px;
-    font-weight:400;
-}
-header ul li a:after{
-    background-color:rgb(255, 255, 255);
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:-8px;
-    height:2px;
-    width:0;
-    transition:0.4s;
-}
-header ul li a:hover:after{
-    width:100%;
-}
-header ul li .fa-house{
-    cursor:pointer;
-    color:#201f72e7;
-}
-header .house_icon{
-    margin-top:-2px;
-}
-header ul li i:hover{
-    color:#201f72;
-}
-header.sticky{
-    background-color:#189ab4c5 ; 
-    border-radius:0 0 30px 30px;    
-}
-header.sticky p, header.sticky ul li a, header.sticky ul li i{
-    color:white;
-}
-/*     border:1px solid black; */
-/* TITLE OR INTRODUCTION */
-.my_info{
-   width: 50%;
-   padding:10px;
-   margin-left:auto;
-   margin-right:auto;
-}
-.intro{
-    margin-top: 40%; 
-    font-family: 'Lora', serif;
-    font-size:25px;
-}
-.homepage h1{
-    font-family: 'Lora', serif;
-    font-size:90px;
-    color:white;
-    letter-spacing: 5px;
-    text-shadow: 5px 5px 10px grey;
-    width: 110%;
-
-    
-}
-.description{
-    font-family: 'Libre Franklin', sans-serif;
+    color:#696368;
     font-size:20px;
-    font-weight:300;
-    letter-spacing: 3px;
-    text-align:center;
+    font-family:'Lovelo Black' , "Poppins";
 }
-.des{
-    color:#CF7019;
+#home h3, #home p, #home h1{
+    margin-left:30px;
+    letter-spacing:5px;
 }
-button{
-    border-radius: 20px;
-    padding:10px 20px;
-    border:#949292;
-    border:1px solid rgb(209, 207, 207); 
-    cursor:pointer;
+#home h3, #home p{
+    color:#464343;
 }
-.button{
-    margin:30px 0 30% 0;
-    display:flex;
-    justify-content:center;
-}
-/* About */
-.about_me{
-    padding:30px;
-}
-.about_me h3{
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight:700;
-    text-align:center;
-    letter-spacing: 3px;
+#home h3{
     font-size:40px;
-    padding:10px;
-    margin-top:100px;
-    text-transform:uppercase;
-    margin-bottom:10px;
+    font-family:'Lovelo Black' , "Poppins";
+    margin-top: -150px
 }
-.am_info{
-    display:flex;
-    justify-content:center;
+#home h1{
+    font-family: 'Lovelo';
+    font-size: 100px;
+    color:white;
+    width:50%;
 }
-.about_me img{
-    max-width: 30%;
-    height:auto;
-    border-radius: 50px;
-    padding:30px;
-}
-.about_me p{
-    font-family: 'Rubik', sans-serif;
-    width: 40%;
-    height:fit-content;
-    padding:20px;
-    margin-top:10px;
-}
-.abtm{
-    background-color:#395a7f4d;
-    padding:5px;
-}
-/* PROJECTS */
-.port{
-    margin-top:70px;
-    padding:5px;
-}
-.port h3{
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight:800;
-    text-align:center;
-    letter-spacing: 3px;
-    font-size:40px;
-    padding:10px;
-    color:black;
-    margin-top: 30px;
-}
-.pr1, .pr2, .pr3{
-    border:1px solid rgb(190, 190, 190);
-    width: 300px;
-    height:290px;
-    background-color: white;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.329), 0 6px 20px 0 rgba(112, 112, 112, 0.308); */
-}
-.proj_list{
-   display:flex; 
-   padding:10px;
-   margin:50px 0 150px 0;
-   justify-content:space-around;
-}
-
-/* Contact */
-.cntct{
-    height:100%;
-    padding:10px 10px 150px 10px;
-}
-.cntct_acc{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-.cntct h3{
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight:800;
-    text-align:center;
-    letter-spacing: 3px;
-    font-size:40px;
-    padding:10px;
-    color:black;
-    margin: 30px 0 40px 0; 
-}
-.cntct_img img{
-    width:auto;
-    height:25px;
-    display:flex;
-    flex-direction:row;
-    margin: 15px;
-}
-.acc p{
-    padding:10.5px;
-    font-family: 'Libre Franklin', sans-serif;
-    cursor:pointer;
+#home p{
+    font-size: 20px;
+    font-family:'Lovelo Black' , "Poppins";
+    letter-spacing: 10px;
 }
