@@ -4,61 +4,127 @@
     src: url('WEB/Lovelo-LineLight.woff'),    
 }
 @font-face{
-    font-family:'Lovelo Black';
-    src:url('./WEB/Lovelo-Black.woff');
+    font-family:'Lovelo black';
+    src: url('./WEB/Lovelo-Black.woff'),    
 }
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    overflow:hidden;
+    /* overflow: hidden; */
 }
 html{
     scroll-behavior:smooth;
 }
 body{
-    height:100vh;
     background-image:linear-gradient(to bottom left, #FACBB9,#F2A9C6,#CFB4DB,#A8C6EA);
+    background-repeat:no-repeat;    
 }
-.nav{
-    position:relative;
-    top: 160px;
-    left:65%;
+#home{
+    padding-bottom: 200px;
+    border:0.5px dashed rgb(248, 248, 248);
+}
+.hide{
+    height: 100vh; 
+    width: 23%;
+    background-color:rgba(255, 255, 255, 0.582);
+    position:fixed;
+    left:76.9%;
+    top:0;
+    display:none;
+}
+.nav .div1{
+    margin-top:100px;
 }
 .nav .div1,.nav .div2,.nav .div3{
-    background-color:white;
-    margin:20px;
-    padding:20px 15px;
-    width:23%;
-    border-radius: 10px;
+    width:100%;
+    padding: 20px;
     text-align:center;
 }
 .nav a{
     text-decoration:none;
     color:#696368;
-    font-size:20px;
-    font-family:'Lovelo Black' , "Poppins";
+    font-size:25px;
+    font-family:"Poppins", Helvetica;
 }
+.nav .div1:hover, .nav .div2:hover, .nav .div3:hover{
+    background-color:rgba(255, 255, 255, 0.726);
+}
+/* HAMBURGER MENU */
+.hamburger_menu{
+    margin:10px;
+    cursor:pointer;
+    position:fixed;
+    left:93%;
+    top: 0;
+    z-index: 100;
+}
+.bar1,.bar2,.bar3{
+    margin:5px;
+    width: 50px;
+    height: 10px;
+    border-radius:5px;
+    background-color:white;
+}
+.change .bar1 {
+    transform: translate(0, 15px) rotate(-45deg);
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    transform: translate(0, -15px) rotate(45deg);
+}
+/* INTRO */
 #home h3, #home p, #home h1{
-    margin-left:30px;
-    letter-spacing:5px;
+    margin-left:50px;
 }
 #home h3, #home p{
     color:#464343;
+    font-family: "Poppins", Helvetica;
+    letter-spacing:5px;
 }
 #home h3{
-    font-size:40px;
-    font-family:'Lovelo Black' , "Poppins";
-    margin-top: -150px
+    font-size:35px;
+    margin-top: 20%;
 }
 #home h1{
-    font-family: 'Lovelo';
-    font-size: 100px;
+    font-family: 'Lovelo', "Poppins", Helvetica;
+    font-size: 120px;
+    letter-spacing:8px;
     color:white;
-    width:50%;
+    /* width:50%; */
 }
 #home p{
     font-size: 20px;
-    font-family:'Lovelo Black' , "Poppins";
     letter-spacing: 10px;
 }
+
+/* ABOUT */
+#about{
+    padding:50px;
+    display:flex;
+}
+.am_description, .image{
+    margin: 80px 80px 0 0;
+}
+.am_description h2{
+    color:white;
+    font-family: "Lovelo black", "Poppins", Helvetica;
+    font-size: 70px;
+    letter-spacing: 5px;
+    /* line-height:80px; */
+    /* width: 100px; */
+}
+.am_description p{
+    font-family:"Poppins", Helvetica;
+    color:#464343;
+}
+.image img{
+    border:1px dashed white;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.452), 0 6px 20px 0 rgba(0, 0, 0, 0.349);
+    border-radius: 5px;
+}
+
+/*  border:1px solid black; */
