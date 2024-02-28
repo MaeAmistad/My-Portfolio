@@ -20,6 +20,16 @@ body{
     background-image:linear-gradient(to bottom left, #FACBB9,#F2A9C6,#CFB4DB,#A8C6EA);
     background-repeat:no-repeat;    
 }
+h2{
+    color:white;
+    font-family: "Lovelo black", "Poppins", Helvetica;
+    font-size: 70px;
+    letter-spacing: 5px;
+    /* line-height:80px; */
+    /* width: 100px; */
+}
+
+/* HOME */
 #home{
     padding-bottom: 200px;
     border:0.5px dashed rgb(248, 248, 248);
@@ -36,7 +46,7 @@ body{
 .nav .div1{
     margin-top:100px;
 }
-.nav .div1,.nav .div2,.nav .div3{
+.nav_men{
     width:100%;
     padding: 20px;
     text-align:center;
@@ -47,7 +57,7 @@ body{
     font-size:25px;
     font-family:"Poppins", Helvetica;
 }
-.nav .div1:hover, .nav .div2:hover, .nav .div3:hover{
+.nav .nav_men:hover{
     background-color:rgba(255, 255, 255, 0.726);
 }
 /* HAMBURGER MENU */
@@ -109,14 +119,6 @@ body{
 .am_description, .image{
     margin: 80px 80px 0 0;
 }
-.am_description h2{
-    color:white;
-    font-family: "Lovelo black", "Poppins", Helvetica;
-    font-size: 70px;
-    letter-spacing: 5px;
-    /* line-height:80px; */
-    /* width: 100px; */
-}
 .am_description p{
     font-family:"Poppins", Helvetica;
     color:#464343;
@@ -142,4 +144,34 @@ body{
     height: 500px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.452), 0 6px 20px 0 rgba(0, 0, 0, 0.349);
     border-radius: 5px;
+}
+
+/* PROJECTS */
+#projects{
+    padding: 50px;
+    border-bottom:0.5px dashed rgb(248, 248, 248);
+}
+#projects h2{
+    padding: 70px 0 50px 0;
+}
+.proj{
+   display:flex; 
+   flex-wrap: wrap;
+   justify-content:center;
+   margin-bottom:30px;
+}
+.prjct{
+    border:1px solid grey;
+    margin:10px;
+    width: 500px;
+    height: 300px;
+}
+
+/* CONTACT */
+#contact{
+    padding: 50px;
+    border-bottom:0.5px dashed rgb(248, 248, 248);
+}
+#contact h2{
+    padding: 70px 0 50px 0;
 }
