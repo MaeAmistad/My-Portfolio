@@ -14,3 +14,7 @@ hammenu.addEventListener('click', ()=>{
         hammenu.classList.remove("change");
      }
 });
+
+resume.addEventListener('click', () =>{
+   window.open ('./other/Christine-Mae-Amistad-Resume.pdf', '_blank');
+});
